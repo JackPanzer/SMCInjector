@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMCInjector", "SMCInjector\SMCInjector.csproj", "{06264C49-0F89-4BCD-BE70-C4EB66321738}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMCInjector.Tests", "SMCInjector.Tests\SMCInjector.Tests.csproj", "{1BC13786-84D3-43A6-84B6-F69134C367D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06264C49-0F89-4BCD-BE70-C4EB66321738}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06264C49-0F89-4BCD-BE70-C4EB66321738}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06264C49-0F89-4BCD-BE70-C4EB66321738}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06264C49-0F89-4BCD-BE70-C4EB66321738}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BC13786-84D3-43A6-84B6-F69134C367D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BC13786-84D3-43A6-84B6-F69134C367D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BC13786-84D3-43A6-84B6-F69134C367D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BC13786-84D3-43A6-84B6-F69134C367D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E31FEF3A-4775-406F-B980-B8B785045B03}
+	EndGlobalSection
+EndGlobal

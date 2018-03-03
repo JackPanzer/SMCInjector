@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Instance>
+    <!-- Services/Interfaces declarations -->
+    <Services>
+        <Registry Alias="IRepository" Class="SMCInjector.Tests.Services.NonExistingInterface" Assembly="SMCInjector.Tests" />
+        <Registry Alias="RepositoryMock" Class="SMCInjector.Tests.Services.RepositoryMock`1" Assembly="SMCInjector.Tests" />
+    
+        <Registry Alias="SimpleWcfService" Class="SMCInjector.Tests.Services.SimpleWcfService" Assembly="SMCInjector.Tests" />
+    </Services>
+
+    <!-- Service mapping -->
+    <Mappings>
+        <Mapping Name="ProductServiceMapping" From="IProductService" To="ProductService" InjectionType="Scoped" />
+        <Mapping Name="RepositoryServiceMapping" From="IRepository" To="RepositoryMock" InjectionType="Scoped" />
+    
+        <Mapping Name="SimpleWcfServiceMapping" From="SimpleWcfService" To="SimpleWcfService" InjectionType="Singleton" />
+    </Mappings>
+
+    <!-- Constructors for the mappings -->
+    <Constructors>
+        <Constructor MapName="SimpleWcfServiceMapping">
+            <Param Name="binding" Value="ITestService_Binding" />
+        </Constructor>
+    </Constructors>
+</Instance>
